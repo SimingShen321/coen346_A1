@@ -8,15 +8,13 @@ public class implementation implements Operations{
     public void createProcess() throws Exception{
         PCB process = new PCB(PIDManager.allocate_pid(), "Running");
         addProcess(process);
-
-
+        System.out.println("Process " + process.getPid() + " created");
 
     }
 
     @Override
     public int getProcessId() {
-
-        return ;
+        return 0;
     }
 
     @Override
